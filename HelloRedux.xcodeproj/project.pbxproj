@@ -11,6 +11,14 @@
 		ABA9A8022AA837A200139816 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A8012AA837A200139816 /* ContentView.swift */; };
 		ABA9A8042AA837A500139816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA9A8032AA837A500139816 /* Assets.xcassets */; };
 		ABA9A8072AA837A500139816 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA9A8062AA837A500139816 /* Preview Assets.xcassets */; };
+		ABA9A80F2AA8381400139816 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A80E2AA8381400139816 /* Store.swift */; };
+		ABA9A8122AA838A700139816 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A8112AA838A700139816 /* Task.swift */; };
+		ABA9A8152AA846C400139816 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A8142AA846C400139816 /* AppReducer.swift */; };
+		ABA9A8172AA846DC00139816 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A8162AA846DC00139816 /* CounterReducer.swift */; };
+		ABA9A8192AA846ED00139816 /* TaskReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A8182AA846ED00139816 /* TaskReducer.swift */; };
+		ABA9A81B2AA982A400139816 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A81A2AA982A400139816 /* AddTaskView.swift */; };
+		ABA9A81E2AA9B9FB00139816 /* LogMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A81D2AA9B9FB00139816 /* LogMiddleware.swift */; };
+		ABA9A8202AA9E8A800139816 /* IncrementMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A81F2AA9E8A800139816 /* IncrementMiddleware.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		ABA9A8012AA837A200139816 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ABA9A8032AA837A500139816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABA9A8062AA837A500139816 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ABA9A80E2AA8381400139816 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		ABA9A8112AA838A700139816 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		ABA9A8142AA846C400139816 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		ABA9A8162AA846DC00139816 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		ABA9A8182AA846ED00139816 /* TaskReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskReducer.swift; sourceTree = "<group>"; };
+		ABA9A81A2AA982A400139816 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		ABA9A81D2AA9B9FB00139816 /* LogMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMiddleware.swift; sourceTree = "<group>"; };
+		ABA9A81F2AA9E8A800139816 /* IncrementMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementMiddleware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +67,11 @@
 		ABA9A7FE2AA837A200139816 /* HelloRedux */ = {
 			isa = PBXGroup;
 			children = (
+				ABA9A8102AA8389700139816 /* Models */,
+				ABA9A80D2AA837E100139816 /* Store */,
 				ABA9A7FF2AA837A200139816 /* HelloReduxApp.swift */,
 				ABA9A8012AA837A200139816 /* ContentView.swift */,
+				ABA9A81A2AA982A400139816 /* AddTaskView.swift */,
 				ABA9A8032AA837A500139816 /* Assets.xcassets */,
 				ABA9A8052AA837A500139816 /* Preview Content */,
 			);
@@ -65,6 +84,43 @@
 				ABA9A8062AA837A500139816 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ABA9A80D2AA837E100139816 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				ABA9A81C2AA9B9E600139816 /* Middlewares */,
+				ABA9A8132AA846B200139816 /* Reducers */,
+				ABA9A80E2AA8381400139816 /* Store.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		ABA9A8102AA8389700139816 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABA9A8112AA838A700139816 /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ABA9A8132AA846B200139816 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				ABA9A8142AA846C400139816 /* AppReducer.swift */,
+				ABA9A8162AA846DC00139816 /* CounterReducer.swift */,
+				ABA9A8182AA846ED00139816 /* TaskReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		ABA9A81C2AA9B9E600139816 /* Middlewares */ = {
+			isa = PBXGroup;
+			children = (
+				ABA9A81D2AA9B9FB00139816 /* LogMiddleware.swift */,
+				ABA9A81F2AA9E8A800139816 /* IncrementMiddleware.swift */,
+			);
+			path = Middlewares;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +193,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABA9A8122AA838A700139816 /* Task.swift in Sources */,
+				ABA9A8172AA846DC00139816 /* CounterReducer.swift in Sources */,
+				ABA9A80F2AA8381400139816 /* Store.swift in Sources */,
+				ABA9A81B2AA982A400139816 /* AddTaskView.swift in Sources */,
 				ABA9A8022AA837A200139816 /* ContentView.swift in Sources */,
+				ABA9A8192AA846ED00139816 /* TaskReducer.swift in Sources */,
 				ABA9A8002AA837A200139816 /* HelloReduxApp.swift in Sources */,
+				ABA9A8152AA846C400139816 /* AppReducer.swift in Sources */,
+				ABA9A81E2AA9B9FB00139816 /* LogMiddleware.swift in Sources */,
+				ABA9A8202AA9E8A800139816 /* IncrementMiddleware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
